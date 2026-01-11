@@ -9,7 +9,7 @@ st.set_page_config(page_title="Fraud Detection App", layout="centered")
 
 @st.cache_resource
 def load_model():
-    return joblib.load("fraud_model_pipeline.joblib")
+    return joblib.load("models/fraud_model_pipeline.joblib")
 
 model = load_model()
 
